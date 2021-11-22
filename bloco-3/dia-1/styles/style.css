@@ -1,0 +1,38 @@
+body {
+  background-color: #80ffd4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  color: brown;
+  text-align: center;
+}
+
+h2 {
+  color: #240046;
+}
+
+#cores {
+  color: orange;
+}
+
+p {
+  background-color: green;
+  color: white;
+  text-align: justify;
+}
+
+.history-paragraph {
+  background-color: yellow;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+img {
+  width: 200px;
+}
