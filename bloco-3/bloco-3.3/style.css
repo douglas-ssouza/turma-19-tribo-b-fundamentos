@@ -1,0 +1,43 @@
+body {
+  background-color: aquamarine;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(75, 153, 127);
+}
+
+#foto {
+  border-radius: 100%;
+  width: 150px;
+  margin: auto;
+  display: inline-block;
+}
+
+.link {
+  background: rgb(50, 30, 40);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* pseudoclasses */
+.link:hover {
+  background-color: gray;
+  text-decoration: underline;
+  padding: 25px 30px;
+  font-size: 1.2em;
+}
+
+.link:active {
+  background-color: rgb(50, 30, 40);
+}
+
+li:first-of-type {
+  font-weight: 900;
+}
+
+ul {
+  list-style-type: none;
+}
