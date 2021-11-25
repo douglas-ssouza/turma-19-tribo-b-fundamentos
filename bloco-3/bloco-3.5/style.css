@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  padding: 15px;
+}
+
+nav {
+  background-color: green;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+}
+
+main {
+  background-color: yellow;
+}
+
+section {
+  background-color: blueviolet;
+  width: 65%;
+  display: inline-block;
+  padding: 1%;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+aside {
+  background-color: blue;
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1%;
+  margin-left: 2%;
+}
+
+footer {
+  background-color: pink;
+  text-align: center;
+}
