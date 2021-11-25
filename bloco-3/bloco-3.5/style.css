@@ -1,19 +1,44 @@
 header {
   background-color: red;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 15px;
 }
 
 nav {
   background-color: green;
 }
 
+ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+}
+
 main {
   background-color: yellow;
 }
 
+section {
+  background-color: blueviolet;
+  width: 65%;
+  display: inline-block;
+  padding: 1%;
+}
+
 aside {
   background-color: blue;
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1%;
+  margin-left: 2%;
 }
 
 footer {
   background-color: pink;
+  text-align: center;
 }
