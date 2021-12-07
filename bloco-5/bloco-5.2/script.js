@@ -28,19 +28,26 @@ const estados = [
   { sigla: 'TO', nome: 'Tocantins' },
 ];
 
-const statesTable = document.querySelector('.states-table');
+// Passos para adicionar um elemento:
+// 1 - Selecionar o elemento pai/mãe
+// 2 - Criar o elemento (createElement(<nomeDaTag>))
+// 3 - AppendChild para anexar o filho
 
-for (let index = 0; index < estados.length; index += 1) {
+const table = document.querySelector('.states-table');
+const tbody = document.createElement('tbody');
+table.appendChild(tbody);
+
+for (const index in estados) {
   const linha = document.createElement('tr');
   
   const nome = document.createElement('td');
-  const sigla = document.createElement('td');
-  
   nome.innerText = estados[index].nome;
+
+  const sigla = document.createElement('td');
   sigla.innerText = estados[index].sigla;
 
   linha.appendChild(nome);
   linha.appendChild(sigla);
 
-  statesTable.lastElementChild.appendChild(linha);
+  tbody.appendChild(linha);
 }
