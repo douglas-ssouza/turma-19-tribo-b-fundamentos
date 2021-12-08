@@ -25,44 +25,44 @@ const cards = [
   },
 ];
 
+let index = 0;
+
+// 1 pegar o elemento pai/mãe
 const imageContainer = document.querySelector('.image-container');
 
+// 2 Criar o elemento
 const title = document.createElement('h1');
-const card = document.createElement('img');
-
-let index = 0;
 title.innerText = cards[index].place;
+
+const card = document.createElement('img');
 card.src = cards[index].image;
-card.alt = cards[index].place + ' - Ponto Turístico';
 card.classList.add('post-card');
 
+// 3 Anexar o novo elemento no elemento pai/mãe
 imageContainer.appendChild(title);
 imageContainer.appendChild(card);
 
-function goToPreviousImage() {
-  if (index === 0) {
-    index = cards.length - 1;
-  } else {
-    index -= 1;
-  }
-
-  title.innerText = cards[index].place;
-  card.src = cards[index].image;
-  card.alt = cards[index].place + ' - Ponto Turístico';
-}
 const previousArrow = document.querySelector('.previous-container');
-previousArrow.addEventListener('click', goToPreviousImage);
+const nextArrow = document.querySelector('.next-container');
 
 function goToNextImage() {
-  if (index === cards.length - 1) {
+  index += 1;
+  if (index === cards.length) {
     index = 0;
-  } else {
-    index += 1;
   }
 
   title.innerText = cards[index].place;
   card.src = cards[index].image;
-  card.alt = cards[index].place + ' - Ponto Turístico';
 }
-const nextArrow = document.querySelector('.next-container');
 nextArrow.addEventListener('click', goToNextImage);
+
+function goToPreviousImage() {
+  index -= 1;
+  if (index === -1) {
+    index = cards.length - 1;
+  }
+
+  title.innerText = cards[index].place;
+  card.src = cards[index].image;
+}
+previousArrow.addEventListener('click', goToPreviousImage);
