@@ -10,6 +10,10 @@ const btnAdd = document.querySelector('#btn-add');
 const btnRemove = document.querySelector('#btn-remove');
 const moviesContainer = document.querySelector('.movies-container');
 
+function saveMovies() {
+  localStorage.setItem('movies', JSON.stringify(moviesContainer.innerHTML));
+}
+
 function loadMovies() {
   const moviesHTML = JSON.parse(localStorage.getItem('movies'));
   moviesContainer.innerHTML = moviesHTML;
@@ -25,7 +29,7 @@ function addImage() {
 
   moviesContainer.appendChild(card);
 
-  localStorage.setItem('movies', JSON.stringify(moviesContainer.innerHTML));
+  saveMovies();
 }
 btnAdd.addEventListener('click', addImage);
 
@@ -36,7 +40,7 @@ function selectMovie(event) {
     event.target.classList.add('selected');
   }
 
-  localStorage.setItem('movies', JSON.stringify(moviesContainer.innerHTML));
+  saveMovies();
 }
 moviesContainer.addEventListener('click', selectMovie);
 
@@ -46,7 +50,7 @@ function removeMovie() {
     moviesContainer.removeChild(movie.parentElement);
   }
 
-  localStorage.setItem('movies', JSON.stringify(moviesContainer.innerHTML));
+  saveMovies();
 }
 btnRemove.addEventListener('click', removeMovie);
 
