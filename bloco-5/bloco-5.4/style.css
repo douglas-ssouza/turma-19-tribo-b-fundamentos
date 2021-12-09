@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: rgb(46, 45, 45);
+  min-height: 83.5vh;
 }
 
 .input-container {
