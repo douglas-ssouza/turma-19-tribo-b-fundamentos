@@ -34,12 +34,7 @@ function addImage() {
 btnAdd.addEventListener('click', addImage);
 
 function selectMovie(event) {
-  if (event.target.classList.contains('selected')) {
-    event.target.classList.remove('selected');
-  } else {
-    event.target.classList.add('selected');
-  }
-
+  event.target.classList.toggle('selected');
   saveMovies();
 }
 moviesContainer.addEventListener('click', selectMovie);
