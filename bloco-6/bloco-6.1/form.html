@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Formulário</title>
 </head>
 <body>
@@ -48,7 +49,7 @@
           <input type="radio" id="input-full" name="stack"> Full stack
         </label>
       </div>
-      <div class="field">
+      <div class="field" id="check">
         <p>O que você já aprendeu?</p>
         <label for="check-git">
           <input type="checkbox" id="check-git" value="git"> Git
@@ -83,12 +84,14 @@
       </div>
       <div class="field">
         <p>Conte-nos um pouco sobre você</p>
-        <textarea id="text-about" cols="100" rows="10"></textarea>
+        <textarea id="text-about" cols="30" rows="5"></textarea>
       </div>
     </fieldset>
 
-    <button type="submit">Enviar</button>
-    <button type="reset">Limpar</button>
+    <div class="buttons">
+      <button type="submit" class="btn">Enviar</button>
+      <button type="reset" class="btn">Limpar</button>
+    </div>
   </form>
 
   <script src="script.js"></script>
