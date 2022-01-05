@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  
+  <form action="index.html">
+    <fieldset class="group">
+      <legend>Informações pessoais</legend>
+      <div class="field">
+        <label for="input-name">Nome: </label>
+        <input type="text" id="input-name">
+      </div>
+      <div class="field">
+        <label for="input-last-name">Sobrenome: </label>
+        <input type="text" id="input-last-name">
+      </div>
+      <div class="field">
+        <label for="input-email">Email: </label>
+        <input type="email" id="input-email">
+      </div>
+      <div class="field">
+        <label for="select-estado">Qual o seu estado?</label>
+        <select id="select-estado">
+          <option value="" selected>Selecione seu estado</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="input-data-nasc">Data de Nascimento: </label>
+        <input type="date" id="input-data-nasc">
+      </div>
+    </fieldset>
+
+    <fieldset class="group">
+      <legend>Tecnologia</legend>
+      <div class="field">
+        <p>Qual o seu preferido?</p>
+        <label for="input-front">
+          <input type="radio" id="input-front" name="stack"> Front-end
+        </label>
+        <label for="input-back">
+          <input type="radio" id="input-back" name="stack"> Back-end
+        </label>
+        <label for="input-full">
+          <input type="radio" id="input-full" name="stack"> Full stack
+        </label>
+      </div>
+      <div class="field">
+        <p>O que você já aprendeu?</p>
+        <label for="check-git">
+          <input type="checkbox" id="check-git" value="git"> Git
+        </label>
+        <label for="check-html">
+          <input type="checkbox" id="check-html" value="html"> HTML
+        </label>
+        <label for="check-css">
+          <input type="checkbox" id="check-css" value="css"> CSS
+        </label>
+        <label for="check-js">
+          <input type="checkbox" id="check-js" value="javascript"> JavaScript
+        </label>
+        <label for="check-flexbox">
+          <input type="checkbox" id="check-flexbox" value="flexbox"> CSS Flexbox
+        </label>
+        <label for="check-bootstrap">
+          <input type="checkbox" id="check-bootstrap" value="bootstrap"> Bootstrap
+        </label>
+        <label for="check-hof">
+          <input type="checkbox" id="check-hof" value="hof"> High Order Functions
+        </label>
+        <label for="check-jest">
+          <input type="checkbox" id="check-jest" value="jest"> Jest
+        </label>
+        <label for="check-promises">
+          <input type="checkbox" id="check-promises" value="promises"> Promises
+        </label>
+        <label for="check-react">
+          <input type="checkbox" id="check-react" value="react"> React
+        </label>
+      </div>
+      <div class="field">
+        <p>Conte-nos um pouco sobre você</p>
+        <textarea id="text-about" cols="100" rows="10"></textarea>
+      </div>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+  </form>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
