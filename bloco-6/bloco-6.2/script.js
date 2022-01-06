@@ -37,3 +37,67 @@ for (let index = 0; index < estados.length; index += 1) {
 
   SELECT_ESTADO.appendChild(option);
 }
+
+const validate = new window.JustValidate('#form');
+
+validate
+  .addField('#input-name', [
+    {
+      rule: 'required',
+      errorMessage: 'Esse campo é obrigatório',
+    },
+    { 
+      rule: 'minLength', 
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+  ])
+  .addField('#input-last-name', [
+    {
+      rule: 'required',
+      errorMessage: 'Esse campo é obrigatório',
+    },
+    { 
+      rule: 'minLength', 
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+  ])
+  .addField('#input-email', [
+    {
+      rule: 'required',
+      errorMessage: 'Esse campo é obrigatório',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email inválido!',
+    },
+  ])
+  .addField('#text-about', [
+    {
+      validator: (value) => {
+        return value[0] === '!';
+      },
+    },
+  ]);
+
+const datePickerObj = {
+  mondayFirst: false,
+  format: 'D dd/mm/yyyy',
+  minDate: '01/01/2022',
+  weekDayLabels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab', 'Dom'],
+}
+
+document.getElementById('input-data-nasc').DatePickerX.init(datePickerObj);
+
+document.querySelector('#btn-change').addEventListener('click', () => {
+  document.getElementById('input-data-nasc').DatePickerX.remove();
+  datePickerObj.mondayFirst = true;
+  document.getElementById('input-data-nasc').DatePickerX.init(datePickerObj);
+});

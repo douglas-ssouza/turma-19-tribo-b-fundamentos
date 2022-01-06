@@ -3,35 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <script src="dist/js/DatePickerX.min.js"></script>
+  <title>Formulário</title>
 </head>
 <body>
   
-  <form>
+  <form class="container" id="form">
     <fieldset>
       <legend class="display-6">Informações pessoais</legend>
       <div class="mb-3">
         <label class="form-label" for="input-name">Nome: </label>
-        <input class="form-control"  type="text" id="input-name">
+        <input class="form__input form-control" type="text" id="input-name">
       </div>
       <div class="mb-3">
         <label class="form-label" for="input-last-name">Sobrenome: </label>
-        <input class="form-control"  type="text" id="input-last-name">
+        <input class="form-control" type="text" id="input-last-name">
       </div>
       <div class="mb-3">
         <label class="form-label" for="input-email">Email: </label>
-        <input class="form-control"  type="email" id="input-email">
+        <input class="form-control" type="email" id="input-email">
       </div>
       <div class="mb-3">
         <label class="form-label" for="select-estado">Qual o seu estado?</label>
-        <select id="select-estado" class="form-select">
+        <select class="form-select" id="select-estado">
           <option value="" selected disabled>Selecione seu estado</option>
         </select>
       </div>
       <div class="mb-3">
         <label class="form-label" for="input-data-nasc">Data de Nascimento: </label>
-        <input class="form-control"  type="date" id="input-data-nasc">
+        <input class="form-control" type="text" id="input-data-nasc">
       </div>
     </fieldset>
 
@@ -39,47 +42,47 @@
       <legend class="display-6">Tecnologia</legend>
       <div class="mb-3">
         <p>Qual o seu preferido?</p>
-        <label class="form-label" for="input-front">
-          <input class="form-check-input"  type="radio" id="input-front" name="stack"> Front-end
+        <label class="form-check-label" for="input-front">
+          <input class="form-check-input" type="radio" id="input-front" name="stack"> Front-end
         </label>
-        <label class="form-label" for="input-back">
-          <input class="form-check-input"  type="radio" id="input-back" name="stack"> Back-end
+        <label class="form-check-label" for="input-back">
+          <input class="form-check-input" type="radio" id="input-back" name="stack"> Back-end
         </label>
-        <label class="form-label" for="input-full">
-          <input class="form-check-input"  type="radio" id="input-full" name="stack"> Full stack
+        <label class="form-check-label" for="input-full">
+          <input class="form-check-input" type="radio" id="input-full" name="stack"> Full stack
         </label>
       </div>
       <div class="mb-3">
         <p>O que você já aprendeu?</p>
-        <label class="form-label" for="check-git">
+        <label class="form-check-label" for="check-git">
           <input class="form-check-input"  type="checkbox" id="check-git" value="git"> Git
         </label>
-        <label class="form-label" for="check-html">
-          <input class="form-check-input"  type="checkbox" id="check-html" value="html"> HTML
+        <label class="form-check-label" for="check-html">
+          <input class="form-check-input" type="checkbox" id="check-html" value="html"> HTML
         </label>
-        <label class="form-label" for="check-css">
-          <input class="form-check-input"  type="checkbox" id="check-css" value="css"> CSS
+        <label class="form-check-label" for="check-css">
+          <input class="form-check-input" type="checkbox" id="check-css" value="css"> CSS
         </label>
-        <label class="form-label" for="check-js">
-          <input class="form-check-input"  type="checkbox" id="check-js" value="javascript"> JavaScript
+        <label class="form-check-label" for="check-js">
+          <input class="form-check-input" type="checkbox" id="check-js" value="javascript"> JavaScript
         </label>
-        <label class="form-label" for="check-flexbox">
-          <input class="form-check-input"  type="checkbox" id="check-flexbox" value="flexbox"> CSS Flexbox
+        <label class="form-check-label" for="check-flexbox">
+          <input class="form-check-input" type="checkbox" id="check-flexbox" value="flexbox"> CSS Flexbox
         </label>
-        <label class="form-label" for="check-bootstrap">
-          <input class="form-check-input"  type="checkbox" id="check-bootstrap" value="bootstrap"> Bootstrap
+        <label class="form-check-label" for="check-bootstrap">
+          <input class="form-check-input" type="checkbox" id="check-bootstrap" value="bootstrap"> Bootstrap
         </label>
-        <label class="form-label" for="check-hof">
-          <input class="form-check-input"  type="checkbox" id="check-hof" value="hof"> High Order Functions
+        <label class="form-check-label" for="check-hof">
+          <input class="form-check-input" type="checkbox" id="check-hof" value="hof"> High Order Functions
         </label>
-        <label class="form-label" for="check-jest">
-          <input class="form-check-input"  type="checkbox" id="check-jest" value="jest"> Jest
+        <label class="form-check-label" for="check-jest">
+          <input class="form-check-input" type="checkbox" id="check-jest" value="jest"> Jest
         </label>
-        <label class="form-label" for="check-promises">
-          <input class="form-check-input"  type="checkbox" id="check-promises" value="promises"> Promises
+        <label class="form-check-label" for="check-promises">
+          <input class="form-check-input" type="checkbox" id="check-promises" value="promises"> Promises
         </label>
-        <label class="form-label" for="check-react">
-          <input class="form-check-input"  type="checkbox" id="check-react" value="react"> React
+        <label class="form-check-label" for="check-react">
+          <input class="form-check-input" type="checkbox" id="check-react" value="react"> React
         </label>
       </div>
       <div class="mb-3">
@@ -94,7 +97,10 @@
     </div>
   </form>
 
+  <button id="btn-change">Mudar</button>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="script.js"></script>
 
 </body>
