@@ -98,6 +98,6 @@ document.getElementById('input-data-nasc').DatePickerX.init(datePickerObj);
 
 document.querySelector('#btn-change').addEventListener('click', () => {
   document.getElementById('input-data-nasc').DatePickerX.remove();
-  datePickerObj.mondayFirst = true;
+  datePickerObj.mondayFirst = datePickerObj.mondayFirst ? false : true;
   document.getElementById('input-data-nasc').DatePickerX.init(datePickerObj);
 });
