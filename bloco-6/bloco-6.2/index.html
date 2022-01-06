@@ -9,88 +9,88 @@
 <body>
   
   <form>
-    <fieldset >
-      <legend>Informações pessoais</legend>
-      <div>
-        <label for="input-name">Nome: </label>
-        <input type="text" id="input-name">
+    <fieldset>
+      <legend class="display-6">Informações pessoais</legend>
+      <div class="mb-3">
+        <label class="form-label" for="input-name">Nome: </label>
+        <input class="form-control"  type="text" id="input-name">
       </div>
-      <div>
-        <label for="input-last-name">Sobrenome: </label>
-        <input type="text" id="input-last-name">
+      <div class="mb-3">
+        <label class="form-label" for="input-last-name">Sobrenome: </label>
+        <input class="form-control"  type="text" id="input-last-name">
       </div>
-      <div>
-        <label for="input-email">Email: </label>
-        <input type="email" id="input-email">
+      <div class="mb-3">
+        <label class="form-label" for="input-email">Email: </label>
+        <input class="form-control"  type="email" id="input-email">
       </div>
-      <div>
-        <label for="select-estado">Qual o seu estado?</label>
-        <select id="select-estado">
+      <div class="mb-3">
+        <label class="form-label" for="select-estado">Qual o seu estado?</label>
+        <select id="select-estado" class="form-select">
           <option value="" selected disabled>Selecione seu estado</option>
         </select>
       </div>
-      <div>
-        <label for="input-data-nasc">Data de Nascimento: </label>
-        <input type="date" id="input-data-nasc">
+      <div class="mb-3">
+        <label class="form-label" for="input-data-nasc">Data de Nascimento: </label>
+        <input class="form-control"  type="date" id="input-data-nasc">
       </div>
     </fieldset>
 
     <fieldset >
-      <legend>Tecnologia</legend>
-      <div>
+      <legend class="display-6">Tecnologia</legend>
+      <div class="mb-3">
         <p>Qual o seu preferido?</p>
-        <label for="input-front">
-          <input type="radio" id="input-front" name="stack"> Front-end
+        <label class="form-label" for="input-front">
+          <input class="form-check-input"  type="radio" id="input-front" name="stack"> Front-end
         </label>
-        <label for="input-back">
-          <input type="radio" id="input-back" name="stack"> Back-end
+        <label class="form-label" for="input-back">
+          <input class="form-check-input"  type="radio" id="input-back" name="stack"> Back-end
         </label>
-        <label for="input-full">
-          <input type="radio" id="input-full" name="stack"> Full stack
+        <label class="form-label" for="input-full">
+          <input class="form-check-input"  type="radio" id="input-full" name="stack"> Full stack
         </label>
       </div>
-      <div id="check">
+      <div class="mb-3">
         <p>O que você já aprendeu?</p>
-        <label for="check-git">
-          <input type="checkbox" id="check-git" value="git"> Git
+        <label class="form-label" for="check-git">
+          <input class="form-check-input"  type="checkbox" id="check-git" value="git"> Git
         </label>
-        <label for="check-html">
-          <input type="checkbox" id="check-html" value="html"> HTML
+        <label class="form-label" for="check-html">
+          <input class="form-check-input"  type="checkbox" id="check-html" value="html"> HTML
         </label>
-        <label for="check-css">
-          <input type="checkbox" id="check-css" value="css"> CSS
+        <label class="form-label" for="check-css">
+          <input class="form-check-input"  type="checkbox" id="check-css" value="css"> CSS
         </label>
-        <label for="check-js">
-          <input type="checkbox" id="check-js" value="javascript"> JavaScript
+        <label class="form-label" for="check-js">
+          <input class="form-check-input"  type="checkbox" id="check-js" value="javascript"> JavaScript
         </label>
-        <label for="check-flexbox">
-          <input type="checkbox" id="check-flexbox" value="flexbox"> CSS Flexbox
+        <label class="form-label" for="check-flexbox">
+          <input class="form-check-input"  type="checkbox" id="check-flexbox" value="flexbox"> CSS Flexbox
         </label>
-        <label for="check-bootstrap">
-          <input type="checkbox" id="check-bootstrap" value="bootstrap"> Bootstrap
+        <label class="form-label" for="check-bootstrap">
+          <input class="form-check-input"  type="checkbox" id="check-bootstrap" value="bootstrap"> Bootstrap
         </label>
-        <label for="check-hof">
-          <input type="checkbox" id="check-hof" value="hof"> High Order Functions
+        <label class="form-label" for="check-hof">
+          <input class="form-check-input"  type="checkbox" id="check-hof" value="hof"> High Order Functions
         </label>
-        <label for="check-jest">
-          <input type="checkbox" id="check-jest" value="jest"> Jest
+        <label class="form-label" for="check-jest">
+          <input class="form-check-input"  type="checkbox" id="check-jest" value="jest"> Jest
         </label>
-        <label for="check-promises">
-          <input type="checkbox" id="check-promises" value="promises"> Promises
+        <label class="form-label" for="check-promises">
+          <input class="form-check-input"  type="checkbox" id="check-promises" value="promises"> Promises
         </label>
-        <label for="check-react">
-          <input type="checkbox" id="check-react" value="react"> React
+        <label class="form-label" for="check-react">
+          <input class="form-check-input"  type="checkbox" id="check-react" value="react"> React
         </label>
       </div>
-      <div>
+      <div class="mb-3">
         <p>Conte-nos um pouco sobre você</p>
-        <textarea id="text-about" cols="30" rows="5"></textarea>
+        <textarea class="form-control" id="text-about" cols="30" rows="5"></textarea>
       </div>
     </fieldset>
 
-    <div class="buttons">
-      <button type="submit" class="btn">Enviar</button>
-      <button type="reset" class="btn">Limpar</button>
+    <div class="mb-3">
+      <button type="submit" class="btn btn-success">Enviar</button>
+      <button type="reset" class="btn btn-danger">Limpar</button>
     </div>
   </form>
 
