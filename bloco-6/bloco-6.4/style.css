@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin: 2%;
+}
+
+.technologies {
+  background-color: #353535;
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  padding: 2%;
+}
+ 
+.tech-logo {
+  width: 150%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.tech-logo img {
+  width: 100%;
+}
