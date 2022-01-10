@@ -15,18 +15,56 @@ header {
 
 .technologies {
   background-color: #353535;
-  width: 80%;
+  width: 100%;
   height: 300px;
-  margin: auto;
   padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
  
 .tech-logo {
-  width: 150%;
+  background-color: pink;
+  border: 1px solid red;
   margin: 1%;
   padding: 1%;
 }
 
 .tech-logo img {
   width: 100%;
+}
+
+.tech-logo:hover {
+  align-self: stretch;
+}
+
+
+#git {
+  order: 1;
+  flex: 0 1 150px;
+}
+
+#html {
+  order: 2;
+  flex: 0 1 150px;
+}
+
+#css {
+  order: 3;
+  flex: 0 1 150px;
+}
+
+#js {
+  order: 4;
+  flex: 0 1 150px;
+}
+
+#bootstrap {
+  order: 5;
+  flex: 0 1 150px;
+}
+
+#jest {
+  order: 6;
+  flex: 0 1 150px;
 }
