@@ -8,6 +8,11 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-image: url('./assets/team.jpg');
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position-x: 420px;
+  background-position-y: 150px;
 }
 
 .header {
@@ -28,8 +33,45 @@ body {
 
 .nav-list a {
   text-decoration: none;
-  color: #766F68;
   font-size: 1.4em;
   font-weight: 500;
   margin-left: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 5%;
+}
+
+.main h2 {
+  font-size: 4em;
+  margin-bottom: 5%;
+}
+
+.main p {
+  font-size: 1.6em;
+  margin-bottom: 7%;
+  width: 60%;
+}
+
+.main button {
+  color: #F7F7F7;
+  background-color: #D2872C;
+  font-size: 2em;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+  padding: 10px 0;
+}
+
+.main button:hover {
+  cursor: pointer;
+  background-color: #b36d18;
+}
+
+.nav-list a, .main h2, .main p {
+  color: #766F68;
 }
