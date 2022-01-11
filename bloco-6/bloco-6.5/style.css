@@ -38,6 +38,10 @@ body {
   margin-left: 50px;
 }
 
+.mobile {
+  display: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -74,4 +78,44 @@ body {
 
 .nav-list a, .main h2, .main p {
   color: #766F68;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-size: 90%;
+    background-position-x: 50%;
+    background-position-y: 100px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .header h1{
+    font-size: 1.8em;
+  }
+
+  .main {
+    margin-top: 250px;
+    text-align: center;
+    width: 95%;
+  }
+
+  .main h2 {
+    font-size: 2em;
+  }
+
+  .main p {
+    font-size: 1.3em;
+    max-width: 100%;
+  }
+
+  .main button {
+    align-self: center;
+    width: 100%;
+  }
 }
