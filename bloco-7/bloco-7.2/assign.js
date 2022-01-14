@@ -34,5 +34,8 @@ const tryber3 = {
 };
 
 const newObject = Object.assign({}, {tryber1}, {tryber2}, {tryber3});
+// console.table(newObject);
 
-console.table(newObject);
+// Solução que encontrei para adicionar uma única chave
+const newObject2 = Object.assign({}, tryber2, { favMovie: tryber1.favMovie } );
+console.log(newObject2);
