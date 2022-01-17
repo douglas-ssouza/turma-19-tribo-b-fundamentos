@@ -1,8 +1,9 @@
 const multiplyArray = (array) => {
+  const newArray = [];
   for (let index = 0; index < array.length; index += 1) {
-    array[index] = array[index] * 2;
+    newArray.push(array[index] * 2);
   }
-  return array;
+  return newArray;
 }
 
 module.exports = multiplyArray;
