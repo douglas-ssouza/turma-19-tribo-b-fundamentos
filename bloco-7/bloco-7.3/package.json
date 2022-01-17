@@ -1,0 +1,15 @@
+{
+  "name": "bloco-7.3",
+  "version": "1.0.0",
+  "description": "Monitoria sobre jest",
+  "main": "createObject.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Turma 19 - Tribo B",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
