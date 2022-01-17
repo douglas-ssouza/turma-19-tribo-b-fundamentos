@@ -1,3 +1,4 @@
-const greeting = (name) => `Hello, ${name}`;
+const greeting = (name) => !name
+  ? 'Hello, World' : `Hello, ${name}`;
 
 module.exports = greeting;
