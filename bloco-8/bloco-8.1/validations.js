@@ -18,11 +18,27 @@ function createNewArray (array, callback) {
   return newArray;
 }
 
-const objeto = {
-  positivos: createNewArray(array, isPositive),
-  negativos: createNewArray(array, isNegative),
-  pares: createNewArray(array, isEven),
-  impares: createNewArray(array, isOdd),
+// const objeto = {
+//   positivos: createNewArray(array, isPositive),
+//   negativos: createNewArray(array, isNegative),
+//   pares: createNewArray(array, isEven),
+//   impares: createNewArray(array, isOdd),
+// };
+ 
+const object = {
+  name: 'João',
+  lastName: 'Silva',
+  age: 20,
 };
 
-console.table(objeto);
+const changeName = (name, lastName) => {
+  object.name = name;
+  object.lastName = lastName; 
+};
+
+function changeObject(param1, param2, callback) {
+  callback(param1, param2);
+}
+
+changeObject('Gean', 'Souza', changeName);
+console.log(object);
