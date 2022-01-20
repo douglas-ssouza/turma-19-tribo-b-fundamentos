@@ -73,8 +73,6 @@ const books = [
 
 // Encontre o primeiro item que não seja de fantasia
 
-// Orderne o array de acordo com a data de lançamento
-
 // Verifique se algum livro tem o nome com 3 caracteres ou menos
 
 // Ordene o array em ordem alfabetica de acordo com os nomes do livros

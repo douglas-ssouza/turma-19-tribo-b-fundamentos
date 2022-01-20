@@ -1,5 +1,6 @@
 const books = require('./books');
 
+// Orderne o array de acordo com a data de lançamento
 const orderByReleaseYear = (array) => {
   for (let i = 1; i < array.length; i += 1) {
     for (let j = 0; j < array.length; j += 1) {
