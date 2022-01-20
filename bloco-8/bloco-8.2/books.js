@@ -61,4 +61,31 @@ const books = [
   },
 ];
 
+// imprima na tela o nome de cada um dos livros
+
+// Verifique se todos os livros tem o nome com mais de 10 caracteres
+
+// Verifique se algum livro é do genero de Ficção Científica
+
+// Encontre o primeiro item cujo autor é Isaac Asimov
+
+// Ordene o array de acordo com a data de nascimento dos autores
+
+// adicione uma chave rating em cada item do array
+// Utilize o seguinte array:
+// const ratings = [5, 5, 4, 4, 3, 3];
+
+// Verifique se todos os livros tem o id menor do 8
+
+// Encontre o primeitro item que o ano de lançamento menor que 1950
+
+// Encontre o primeiro item que não seja de fantasia
+
+// Orderne o array de acordo com a data de lançamento
+
+// Verifique se algum livro tem o nome com 3 caracteres ou menos
+
+// Ordene o array em ordem alfabetica de acordo com os nomes do livros
+
+
 module.exports = books;
