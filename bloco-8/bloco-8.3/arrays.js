@@ -34,7 +34,7 @@ const students = [
     name: 'Pedro',
     lastName: 'Nascimento',
     age: 29,
-    favTechs: ['HTML', 'CSS', 'JavaScript', 'Jest', 'React'],
+    favTechs: ['HTML', 'css', 'JavaScript', 'Jest', 'React'],
   },
   {
     id: 6,
