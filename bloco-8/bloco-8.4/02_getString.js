@@ -1,4 +1,4 @@
-const numbers = [0, 4, 6, 1, 3, 4, 7, 9, 2, 18, 200, 2];
+const numbers = [1, 2, 3, '.', 4, 5, 6, '.', 7, 8, 9, '-', 1, 0];
 
 function getString(arr) {
   let string = '';

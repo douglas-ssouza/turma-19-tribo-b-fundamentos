@@ -1,4 +1,4 @@
-const numbers = [0, 4, 6, 1, 3, 4, 7, 9, 2, 18, 200, 2];
+const numbers = [10, 9 , 4, 6, 2, 9 , 8, 6];
 
 function getTotalAndAverage(arr) {
   let total = 0;
