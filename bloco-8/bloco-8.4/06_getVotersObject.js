@@ -9,7 +9,7 @@
  * oldVotes: numero total de pessoas nessa faixa que votou
  */
 
-var voters = [
+const voters = [
   {name:'Bob' , age: 30, voted: true},
   {name:'Jake' , age: 32, voted: true},
   {name:'Kate' , age: 25, voted: false},
@@ -34,8 +34,8 @@ Expected Result:
 {
   youngPeople: 4,
   youngVotes: 1,
-  midsPeople: 6,
-  midsVotes: 4,
+  midPeople: 6,
+  midVotes: 4,
   oldPeople: 2,
   oldVotes: 2
 }
