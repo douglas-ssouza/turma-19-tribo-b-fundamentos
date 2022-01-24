@@ -1,7 +1,19 @@
 // Quantas pessoas votaram?
 
 function totalVotes(arr) {
-  // Your code here
+  // return arr.filter((person) => person.voted).length;
+
+  // return arr.reduce((acc, curr) => {
+  //   if (curr.voted) {
+  //     return acc + 1;
+  //   }
+
+  //   return acc;
+  // }, 0);
+
+  return arr.reduce((acc, curr) => (
+    curr.voted ? acc + 1 : acc
+  ), 0);
 }
 
 const voters = [

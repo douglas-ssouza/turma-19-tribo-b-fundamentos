@@ -1,7 +1,7 @@
 // Quanto custaria para comprar todos os itens de uma vez?
 
 function shoppingSpree(arr) {
-  // Your code here
+  return arr.reduce((acc, curr) => acc + curr.price, 0);
 }
 
 const wishlist = [

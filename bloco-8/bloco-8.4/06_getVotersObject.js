@@ -25,7 +25,29 @@ const voters = [
 ];
 
 function voterResults(arr) {
-  // Your code here
+  const votersObj = {
+    youngPeople: 0,
+    youngVotes: 0,
+    midPeople: 0,
+    midVotes: 0,
+    oldPeople: 0,
+    oldVotes: 0,
+  };
+
+  return arr.reduce((acc, curr) => {
+    if (curr.age < 26) {
+      acc.youngPeople += 1;
+      acc.youngVotes = curr.voted ? acc.youngVotes + 1 : acc.youngVotes;
+    } else if (curr.age < 56) {
+      acc.midPeople += 1;
+      acc.midVotes = curr.voted ? acc.midVotes + 1 : acc.midVotes;
+    } else {
+      acc.oldPeople += 1;
+      acc.oldVotes = curr.voted ? acc.oldVotes + 1 : acc.oldVotes;
+    }
+
+    return acc;
+  }, votersObj)
 }
 
 console.log(voterResults(voters));
