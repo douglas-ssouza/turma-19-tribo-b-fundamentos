@@ -61,7 +61,27 @@ const books = [
   },
 ];
 
-const displayBookName = () => {};
+// {
+//   id: 1,
+//   name: 'As Crônicas de Gelo e Fogo',
+//   genre: 'Fantasia',
+//   author: {
+//     name: 'George R. R. Martin',
+//     birthYear: 1948,
+//   },
+//   releaseYear: 1991,
+// },
 
-const displayAuthorNameAndBirth = () => {};
+const displayBookName = ({ id, name, genre, author: { name: authorName, birthYear}, releaseYear }) => {
+  return `Id: ${id}
+Nome: ${name}
+Gênero: ${genre}
+Nome do Autor: ${authorName}
+Data de Nascimento do Autor: ${birthYear}
+Data de lançamento: ${releaseYear}`;
+};
 
+const displayAuthorNameAndBirth = ({ author: { name, birthYear } }) => 
+  `Autor: ${name} | Data de Nascimento: ${birthYear}`;
+
+console.log(displayAuthorNameAndBirth(books[0]));

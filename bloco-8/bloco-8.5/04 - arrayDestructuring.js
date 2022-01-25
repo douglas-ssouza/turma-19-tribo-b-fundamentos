@@ -61,3 +61,6 @@ const books = [
   },
 ];
 
+const [asCronicasDeGeloEFogo, livro2, , livro4] = books;
+
+console.log(asCronicasDeGeloEFogo);
