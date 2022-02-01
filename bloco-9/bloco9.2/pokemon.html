@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  
+  <h1 id="name"></h1>
+  <img id="image" src="" alt="">
+  
+  <input id="input" type="text" placeholder="Escolha um pokemon">
+  <button id="btn">GET POKEMON</button>
+
+  <script>
+    const name = document.getElementById('name');
+    const image = document.getElementById('image');
+    const input = document.getElementById('input')
+    const btn = document.getElementById('btn');
+
+    const getPokemon = async () => {
+      const pokemonName = input.value.toLowerCase();
+      input.value = '';
+
+      try {
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+        const data = await response.json();
+        name.innerText = data.name;
+        image.src = data.sprites.front_default;
+      } catch (err) {
+        name.innerText = 'Não encontrei esse pokemon';
+        image.src = '';
+      }
+    };
+
+    btn.addEventListener('click', getPokemon);
+
+  </script>
+
+</body>
+</html>
