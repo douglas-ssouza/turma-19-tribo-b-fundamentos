@@ -18,25 +18,27 @@
 
     const url = 'http://deckofcardsapi.com/api/deck/new/draw/?count=1';
 
-    const fetchCard1 = async () => {
-      const response = await fetch(url);
-      const data = await response.json();
+    // const fetchCard1 = async () => {
+    //   const response = await fetch(url);
+    //   const data = await response.json();
 
-      card.src = data.cards[0].images.png;
-    };
+    //   console.log(data.cards[0]);
+
+    //   card.src = data.cards[0].images.png;
+    // };
 
     const fetchCard2 = () => {
       fetch(url)
         .then((response) => response.json())
-        .then((data) => {
-          card.src = data.cards[0].images.png;
+        .then((json) => {
+          card.src = json.cards[0].images.png;
           card.alt = '';
         })
         .catch((error) => {
           card.src = '',
           card.alt = `Não pude encontrar sua carta \n${error}`;
-        })
-    }
+        });
+    };
 
     btn.addEventListener('click', fetchCard2);
 
