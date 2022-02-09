@@ -1,4 +1,4 @@
-# TRYBE | TURMA 19 - TRIBO B
+# TRYBE | MONITORIA SUMMER
 
 ## Módulo de fundamentos
 
@@ -12,3 +12,7 @@
 7. Introdução a JavaScript ES6 e Testes Unitários
 8. Higher Order Functions do JavaScript ES6
 9. JavaScript e Testes Assíncronos 
+
+### Como utilizar:
+O conteúdo do repositório está separado em diretórios com o número do bloco e o dia daquele bloco.
+Para acessar, por exemplo, o material da monitoria do primeiro dia de do bloco de Higher Order Functions, basta acessar o diretório
