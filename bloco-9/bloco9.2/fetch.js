@@ -14,18 +14,27 @@ const fetchCard1 = async () => {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
+    return data;
   } catch (err) {
-    console.log(`Deu ruim \n${err}`);
+    return `Deu ruim \n${err}`;
   }
 };
 
 const fetchCard2 = () => {
-  fetch(url)
+  return fetch(url)
     .then((response) => response.json())
-    .then((data) => console.log(data))
+    .then((data) => data)
     .catch((err) => console.log(`Deu ruim \n${err}`));
 };
 
-fetchCard1();
-fetchCard2();
+// fetchCard1();
+console.log(fetchCard2());
+
+// fetchCard1().then((data) => console.log(data));
+
+// async function main() {
+//   const card = await fetchCard1().cards[0];
+//   console.log(card);
+// }
+
+// main();
