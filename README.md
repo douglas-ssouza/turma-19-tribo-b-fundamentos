@@ -15,4 +15,4 @@
 
 ### Como utilizar:
 O conteúdo do repositório está separado em diretórios com o número do bloco e o dia daquele bloco.
-Para acessar, por exemplo, o material da monitoria do primeiro dia de do bloco de Higher Order Functions, basta acessar o diretório
+Para acessar, por exemplo, o material da monitoria do primeiro dia de do bloco de Higher Order Functions, basta acessar o diretório bloco-8 e depois bloco-8.1
